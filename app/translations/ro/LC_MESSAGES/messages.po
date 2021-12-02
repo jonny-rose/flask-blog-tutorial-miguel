@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-23 23:37+0300\n"
+"POT-Creation-Date: 2021-11-22 17:59+0200\n"
 "PO-Revision-Date: 2021-10-23 20:29+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
@@ -19,155 +19,162 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/email.py:19
+#: app/__init__.py:19
+msgid "Please log in to access this page."
+msgstr ""
+
+#: app/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr ""
+
+#: app/auth/email.py:7
 msgid "[Microblog] Reset Your Password"
 msgstr "Reseteaza parola"
 
-#: app/forms.py:11 app/forms.py:18 app/forms.py:51
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
 msgid "Username"
 msgstr "Nume utilizator"
 
-#: app/forms.py:12 app/forms.py:20 app/forms.py:43
+#: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:41
 msgid "Password"
 msgstr "Parola"
 
-#: app/forms.py:13
+#: app/auth/forms.py:11
 msgid "Remember Me"
 msgstr "Retine"
 
-#: app/forms.py:14 app/routes.py:86 app/templates/login.html:5
+#: app/auth/forms.py:12 app/auth/routes.py:28 app/templates/auth/login.html:5
 msgid "Sign In"
 msgstr "Logheaza"
 
-#: app/forms.py:19 app/forms.py:38
+#: app/auth/forms.py:17 app/auth/forms.py:36
 msgid "Email"
 msgstr ""
 
-#: app/forms.py:22 app/forms.py:45
+#: app/auth/forms.py:20 app/auth/forms.py:43
 msgid "Repeat Password"
 msgstr "Repeta parola"
 
-#: app/forms.py:24 app/routes.py:107 app/templates/register.html:5
+#: app/auth/forms.py:22 app/auth/routes.py:49
+#: app/templates/auth/register.html:5
 msgid "Register"
 msgstr "Inregistreaza"
 
-#: app/forms.py:29 app/forms.py:64
+#: app/auth/forms.py:27 app/main/forms.py:23
 msgid "Please use a different username."
 msgstr "Te rugam, foloseste un alt nume de utilizator."
 
-#: app/forms.py:34
+#: app/auth/forms.py:32
 msgid "Please use a different email address."
 msgstr "Te rugam, foloseste o alta adresa de email."
 
-#: app/forms.py:39 app/forms.py:47
+#: app/auth/forms.py:37 app/auth/forms.py:45
 msgid "Request Password Reset"
 msgstr "Cere resetarea parolei"
 
-#: app/forms.py:52
-msgid "About me"
-msgstr "Despre mine"
-
-#: app/forms.py:54 app/forms.py:73
-msgid "Submit"
-msgstr "Trimite"
-
-#: app/forms.py:72
-msgid "Say something"
-msgstr "Spune ceva"
-
-#: app/routes.py:42
-msgid "Your post is now live!"
-msgstr "Postarea ta este acum live!"
-
-#: app/routes.py:51 app/templates/base.html:21
-msgid "Home"
-msgstr "Acasa"
-
-#: app/routes.py:66 app/templates/base.html:22
-msgid "Explore"
-msgstr "Exploreaza"
-
-#: app/routes.py:79
+#: app/auth/routes.py:21
 msgid "Invalid username or password"
 msgstr "Nume sau parola invalide"
 
-#: app/routes.py:105
+#: app/auth/routes.py:47
 msgid "Congratulations, you are now a registered user!"
 msgstr "Felicitari, esti intregistrat!"
 
-#: app/routes.py:120
+#: app/auth/routes.py:63
 msgid "Check your email for the instructions to reset your password"
 msgstr "Verifica-ti emailul pentru instructiuni de resetare a parolei"
 
-#: app/routes.py:123 app/templates/reset_password_request.html:5
+#: app/auth/routes.py:66 app/templates/auth/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Reseteaza parola"
 
-#: app/routes.py:137
+#: app/auth/routes.py:80
 msgid "Your password has been reset."
 msgstr "Parola ta a fost resetata."
 
-#: app/routes.py:166
+#: app/main/forms.py:11
+msgid "About me"
+msgstr "Despre mine"
+
+#: app/main/forms.py:13 app/main/forms.py:32 app/main/forms.py:46
+msgid "Submit"
+msgstr "Trimite"
+
+#: app/main/forms.py:31
+msgid "Say something"
+msgstr "Spune ceva"
+
+#: app/main/forms.py:35 app/main/routes.py:157
+#, fuzzy
+msgid "Search"
+msgstr "Utilizator"
+
+#: app/main/forms.py:45
+msgid "Message"
+msgstr ""
+
+#: app/main/routes.py:37
+msgid "Your post is now live!"
+msgstr "Postarea ta este acum live!"
+
+#: app/main/routes.py:46 app/templates/base.html:21
+msgid "Home"
+msgstr "Acasa"
+
+#: app/main/routes.py:61 app/templates/base.html:22
+msgid "Explore"
+msgstr "Exploreaza"
+
+#: app/main/routes.py:90
 msgid "Your changes have been saved."
 msgstr "Modificarile au fost salvate."
 
-#: app/routes.py:171 app/templates/edit_profile.html:5
+#: app/main/routes.py:95 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Editeaza profil"
 
-#: app/routes.py:182 app/routes.py:202
+#: app/main/routes.py:106 app/main/routes.py:126
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Utilizatorul %(username)s nu a fost gasit."
 
-#: app/routes.py:185
+#: app/main/routes.py:109
 msgid "You cannot follow yourself!"
 msgstr "Nu te poti urmari pe tine!"
 
-#: app/routes.py:189
+#: app/main/routes.py:113
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Il urmaresti pe %(username)s!"
 
-#: app/routes.py:205
+#: app/main/routes.py:129
 msgid "You cannot unfollow yourself!"
 msgstr "Nu te poti dezurmari pe tine!"
 
-#: app/routes.py:209
+#: app/main/routes.py:133
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Nu il urmaresti pe %(username)s."
 
-#: app/translate.py:9
-msgid "Error: the translation service is not configured."
+#: app/main/routes.py:175
+#, fuzzy
+msgid "Your message has been sent."
+msgstr "Parola ta a fost resetata."
+
+#: app/main/routes.py:177
+msgid "Send Message"
 msgstr ""
 
-#: app/translate.py:19
-msgid "Error: the translation service failed."
-msgstr ""
-
-#: app/templates/404.html:4
-msgid "Not Found"
-msgstr ""
-
-#: app/templates/404.html:5 app/templates/500.html:6
-msgid "Back"
-msgstr "Inapoi"
-
-#: app/templates/500.html:4
-msgid "An unexpected error has occurred"
-msgstr ""
-
-#: app/templates/500.html:5
-msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr "Administratorul a fost notificat. Ne cerem scuze pentru neplaceri."
-
-#: app/templates/_post.html:14
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s a spus %(when)s"
 
-#: app/templates/_post.html:25
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "Tradu"
 
@@ -175,19 +182,23 @@ msgstr "Tradu"
 msgid "Welcome to Microblog"
 msgstr "Bun venit pe Microblog"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:27
 msgid "Login"
 msgstr "Logheaza-te"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:29 app/templates/messages.html:4
+msgid "Messages"
+msgstr ""
+
+#: app/templates/base.html:30
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:31
 msgid "Logout"
 msgstr "Delogheaza-te"
 
-#: app/templates/base.html:66
+#: app/templates/base.html:75
 msgid "Error: Could not contact server."
 msgstr ""
 
@@ -196,48 +207,53 @@ msgstr ""
 msgid "Hi, %(username)s!"
 msgstr "Salut, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:41
+#: app/templates/index.html:17 app/templates/user.html:44
 msgid "Newer posts"
 msgstr "Postari mai noi"
 
-#: app/templates/index.html:22 app/templates/user.html:46
+#: app/templates/index.html:22 app/templates/user.html:49
 msgid "Older posts"
 msgstr "Postari mai vechi"
 
-#: app/templates/login.html:12
-msgid "New User?"
-msgstr "Utilizator nou?"
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr ""
 
-#: app/templates/login.html:12
-msgid "Click to Register!"
-msgstr "Apasa pentru a te inregistra!"
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr ""
 
-#: app/templates/login.html:14
-msgid "Forgot Your Password?"
-msgstr "Ai uitat parola?"
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr ""
 
-#: app/templates/login.html:15
-msgid "Click to Reset It"
-msgstr "Apasa pentru a reseta"
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr ""
 
-#: app/templates/reset_password.html:5
-msgid "Reset Your Password"
-msgstr "Reseteaza parola"
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr ""
+
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr ""
 
 #: app/templates/user.html:8
 msgid "User"
 msgstr "Utilizator"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:11
 msgid "Last seen on"
 msgstr "Ultima logare"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:14
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d urmaritori"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:15
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d urmariti"
@@ -246,11 +262,51 @@ msgstr "%(count)d urmariti"
 msgid "Edit your profile"
 msgstr "Editeaza-ti profilul"
 
-#: app/templates/user.html:20
+#: app/templates/user.html:20 app/templates/user_popup.html:23
 msgid "Follow"
 msgstr "Urmaseste"
 
-#: app/templates/user.html:27
+#: app/templates/user.html:27 app/templates/user_popup.html:32
 msgid "Unfollow"
 msgstr "Nu mai urmari"
+
+#: app/templates/user.html:32
+msgid "Send private message"
+msgstr ""
+
+#: app/templates/auth/login.html:12
+msgid "New User?"
+msgstr "Utilizator nou?"
+
+#: app/templates/auth/login.html:12
+msgid "Click to Register!"
+msgstr "Apasa pentru a te inregistra!"
+
+#: app/templates/auth/login.html:14
+msgid "Forgot Your Password?"
+msgstr "Ai uitat parola?"
+
+#: app/templates/auth/login.html:15
+msgid "Click to Reset It"
+msgstr "Apasa pentru a reseta"
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Reseteaza parola"
+
+#: app/templates/errors/404.html:4
+msgid "Not Found"
+msgstr ""
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "Back"
+msgstr "Inapoi"
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Administratorul a fost notificat. Ne cerem scuze pentru neplaceri."
 
